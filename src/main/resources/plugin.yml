@@ -1,0 +1,6 @@
+name: LapisAvatarJoin
+version: ${project.version}
+main: net.lapismc.lapisavatarjoin.LapisAvatarJoin
+api-version: 1.19
+authors: [ Dart2112 ]
+description: A pretty and customizable join plugin that shows the players avatar

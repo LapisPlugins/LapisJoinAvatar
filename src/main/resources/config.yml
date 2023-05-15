@@ -1,0 +1,7 @@
+ConfigVersion: 1
+
+CacheImages: true
+#Time in hours that an image should be used from the cache, a new image will be downloaded after the cached version expires
+CacheTimeout: 2
+
+AvatarURL: "https://crafatar.com/avatars/%UUID%?size=8&default=MHF_Steve"

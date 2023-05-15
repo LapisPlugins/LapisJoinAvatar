@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'maven'
+    id "com.github.johnrengelman.shadow" version "5.2.0"
+}
+
+group = 'net.lapimc'
+archivesBaseName = "LapisAvatarJoin"
+version = '0.1.0'
+
+sourceCompatibility = '11'
+targetCompatibility = '11'
+defaultTasks 'clean', 'build', 'shadowJar'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        name = 'spigotmc-repo'
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compile 'net.lapismc:LapisCore:1.12.4'
+    compileOnly 'org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT'
+}
+
+shadowJar {
+    archiveFileName.set(archivesBaseName + ".jar")
+    exclude 'javax/**'
+    relocate("net.lapismc.lapiscore", "net.lapismc.lapisavatarjoin.core")
+}
+
+processResources {
+    filter {
+        it.replace('${project.version}', project.getVersion())
+    }
+}

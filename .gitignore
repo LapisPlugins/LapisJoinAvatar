@@ -1,0 +1,6 @@
+#Idea files
+/.idea/workspace.xml
+
+#Gradle files
+/.gradle
+/build
