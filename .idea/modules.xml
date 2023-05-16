@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LapisAvatarJoin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LapisAvatarJoin.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.lapimc.LapisAvatarJoin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.lapimc.LapisAvatarJoin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LapisJoinAvatar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LapisJoinAvatar.main.iml" />
     </modules>
   </component>
 </project>
