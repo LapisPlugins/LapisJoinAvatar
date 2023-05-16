@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'net.lapimc'
-archivesBaseName = "LapisAvatarJoin"
+archivesBaseName = "LapisJoinAvatar"
 version = '0.1.0'
 
 sourceCompatibility = '11'
@@ -29,7 +29,7 @@ dependencies {
 shadowJar {
     archiveFileName.set(archivesBaseName + ".jar")
     exclude 'javax/**'
-    relocate("net.lapismc.lapiscore", "net.lapismc.lapisavatarjoin.core")
+    relocate("net.lapismc.lapiscore", "net.lapismc.lapisjoinavatar.core")
 }
 
 processResources {

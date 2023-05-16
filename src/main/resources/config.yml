@@ -7,4 +7,4 @@ CacheTimeout: 2
 #This will send the message one game tick (1/20th of s second) later so that it appears after any other messages
 DelayMessage: false
 
-AvatarURL: "https://crafatar.com/avatars/%UUID%?size=8&default=MHF_Steve"
+AvatarURL: "https://crafatar.com/avatars/%UUID%?size=8&default=MHF_Steve&overlay"

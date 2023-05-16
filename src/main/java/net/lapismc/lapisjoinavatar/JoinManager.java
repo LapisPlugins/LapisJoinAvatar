@@ -1,4 +1,4 @@
-package net.lapismc.lapisavatarjoin;
+package net.lapismc.lapisjoinavatar;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -10,9 +10,9 @@ import java.util.List;
 
 public class JoinManager implements Listener {
 
-    private final LapisAvatarJoin plugin;
+    private final LapisJoinAvatar plugin;
 
-    public JoinManager(LapisAvatarJoin plugin) {
+    public JoinManager(LapisJoinAvatar plugin) {
         this.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);
     }

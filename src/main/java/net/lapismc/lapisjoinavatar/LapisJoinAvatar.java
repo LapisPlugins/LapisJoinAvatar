@@ -1,11 +1,11 @@
-package net.lapismc.lapisavatarjoin;
+package net.lapismc.lapisjoinavatar;
 
-import net.lapismc.lapisavatarjoin.util.AvatarGenerator;
 import net.lapismc.lapiscore.LapisCoreConfiguration;
 import net.lapismc.lapiscore.LapisCorePlugin;
 import net.lapismc.lapiscore.utils.LapisCoreFileWatcher;
+import net.lapismc.lapisjoinavatar.util.AvatarGenerator;
 
-public final class LapisAvatarJoin extends LapisCorePlugin {
+public final class LapisJoinAvatar extends LapisCorePlugin {
 
     public AvatarGenerator generator;
 

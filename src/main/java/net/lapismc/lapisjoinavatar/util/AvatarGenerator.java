@@ -1,6 +1,6 @@
-package net.lapismc.lapisavatarjoin.util;
+package net.lapismc.lapisjoinavatar.util;
 
-import net.lapismc.lapisavatarjoin.LapisAvatarJoin;
+import net.lapismc.lapisjoinavatar.LapisJoinAvatar;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -13,11 +13,11 @@ import java.util.UUID;
 
 public class AvatarGenerator {
 
-    private final LapisAvatarJoin plugin;
+    private final LapisJoinAvatar plugin;
     @SuppressWarnings("UnnecessaryUnicodeEscape")
     private final char block = '\u2588';
 
-    public AvatarGenerator(LapisAvatarJoin plugin) {
+    public AvatarGenerator(LapisJoinAvatar plugin) {
         this.plugin = plugin;
     }
 
