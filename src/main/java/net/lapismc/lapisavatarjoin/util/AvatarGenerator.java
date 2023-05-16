@@ -14,7 +14,8 @@ import java.util.UUID;
 public class AvatarGenerator {
 
     private final LapisAvatarJoin plugin;
-    private final char block = '█';
+    @SuppressWarnings("UnnecessaryUnicodeEscape")
+    private final char block = '\u2588';
 
     public AvatarGenerator(LapisAvatarJoin plugin) {
         this.plugin = plugin;

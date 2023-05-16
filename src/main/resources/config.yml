@@ -4,4 +4,7 @@ CacheImages: true
 #Time in hours that an image should be used from the cache, a new image will be downloaded after the cached version expires
 CacheTimeout: 2
 
+#This will send the message one game tick (1/20th of s second) later so that it appears after any other messages
+DelayMessage: false
+
 AvatarURL: "https://crafatar.com/avatars/%UUID%?size=8&default=MHF_Steve"
