@@ -19,7 +19,6 @@ public class JoinManager implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
-        e.setJoinMessage("");
         Player p = e.getPlayer();
         String[] avatar = plugin.generator.getAvatar(p.getUniqueId());
         List<String> configLines = plugin.config.getMessages().getStringList("Lines");
