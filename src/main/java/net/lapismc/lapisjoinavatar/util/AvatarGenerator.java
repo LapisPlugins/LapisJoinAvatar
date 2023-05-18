@@ -7,6 +7,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.UUID;
@@ -24,13 +25,15 @@ public class AvatarGenerator {
     public String[] getAvatar(UUID uuid) {
         String[] avatarAsText = new String[8];
         //Get image
-        BufferedImage avatar = null;
+        BufferedImage avatar;
         try {
             avatar = getAvatarImage(uuid);
         } catch (IOException e) {
-            //TODO: Send error to the console
             return avatarAsText;
         }
+        //Check it isn't null
+        if (avatar == null)
+            return avatarAsText;
         //Loop over each pixel and get the hex RGB code for it
         for (int h = 0; h < avatar.getHeight(); h++) {
             //Store each pixel from the line
@@ -76,9 +79,12 @@ public class AvatarGenerator {
             connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.95 Safari/537.11");
             avatar = ImageIO.read(connection.getInputStream());
         } catch (IOException e) {
-            e.printStackTrace();
-            //TODO: Maybe print blank image
-            return null;
+            plugin.getLogger().warning("Unable to fetch avatar from web, using steve image instead");
+            InputStream steve = plugin.getResource("Steve.png");
+            if (steve != null)
+                avatar = ImageIO.read(steve);
+            else
+                return null;
         }
         //Resize image to 8x8 if it isn't already
         if (avatar.getHeight() != 8 || avatar.getWidth() != 8) {
