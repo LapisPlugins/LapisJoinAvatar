@@ -1,11 +1,15 @@
 ConfigVersion: 1
 
+#Primary and Secondary colors will replace &p and &s respectively
+#These can be minecraft codes like &6 or hex codes like #6464ff
 PrimaryColor: "&6"
 SecondaryColor: "&c"
 
 #These lines of text are displayed on the right side of the players avatar
 #They are displayed in order from top to bottom, only the first 8 are used
+#Make sure they aren't too long or they will break up the avatar image
 #Default uses Placeholder API expansions Player and Server to show server and player names
+#You need to have the Player and Server expansions installed for these to show correctly
 Lines:
   - ""
   - "&pHello, &s%player_name%&p!"

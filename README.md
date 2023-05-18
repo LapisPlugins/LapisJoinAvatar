@@ -2,11 +2,11 @@
 
 ## Inspiration
 
-This plugin takes heavy inspiration from Picture Login, unfortunately that
-plugin hasn't been updated for a while and doesn't support some new minecraft
+This plugin takes heavy inspiration from Picture Login. Unfortunately, that
+plugin hasn't been updated for a while and doesn't support some new Minecraft
 features like hex colour codes.
 
-You can still check it out on spigot at
+You can still check it out on Spigot at
 https://www.spigotmc.org/resources/picture-login.4514/
 
 This plugin aims to be an almost perfect replacement meaning we also support Placeholder API
@@ -14,8 +14,8 @@ and have added full RGB colour support for text.
 
 ### Features that are the same:
 
-- Colour code support for text that accompanies avatar
-- Hex colour codes for avatar (this was the last update from PictureLogin)
+- Colour code support for the text that accompanies avatars
+- Hex colour codes for the avatar (this was the last update from PictureLogin)
 - Support for a custom URL for fetching avatar image
 - Support for variables in text
 
@@ -23,8 +23,9 @@ and have added full RGB colour support for text.
 
 - Full hex colour support for text
 - Image cache to reduce calls to image API
-- Delay the message to display last everytime
-- LapisFileWatcher to reload config files (this means instant changes for all player who join after you edit the config)
+- Delay the message to display last every time
+- LapisFileWatcher to reload config files (this means instant changes for all players who join after you edit the
+  config)
 - Continued support for future versions
 
 ## Examples
