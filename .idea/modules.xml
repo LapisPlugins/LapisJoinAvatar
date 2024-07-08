@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/LapisJoinAvatar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LapisJoinAvatar.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.lapimc.LapisJoinAvatar.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.lapimc.LapisJoinAvatar.main.iml" />
     </modules>
   </component>
 </project>

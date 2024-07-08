@@ -86,6 +86,8 @@ public class AvatarGenerator {
             else
                 return null;
         }
+        if (avatar == null)
+            return null;
         //Resize image to 8x8 if it isn't already
         if (avatar.getHeight() != 8 || avatar.getWidth() != 8) {
             avatar = resizeImage(avatar);
