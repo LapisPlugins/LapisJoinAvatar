@@ -1,29 +1,32 @@
 plugins {
     id 'java'
-    id 'maven'
-    id "com.github.johnrengelman.shadow" version "5.2.0"
+    id "com.github.johnrengelman.shadow" version "8.1.1"
 }
 
 group = 'net.lapimc'
 archivesBaseName = "LapisJoinAvatar"
 version = '1.0.0'
 
-sourceCompatibility = '11'
-targetCompatibility = '11'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 defaultTasks 'clean', 'build', 'shadowJar'
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven {
         name = 'spigotmc-repo'
         url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
     }
+    //Personal Repo
+    maven {
+        name = "lapismc-repo"
+        url = "https://maven.lapismc.net/repository/maven/"
+    }
 }
 
 dependencies {
-    compile 'net.lapismc:LapisCore:1.12.4'
-    compileOnly 'org.spigotmc:spigot-api:1.19.4-R0.1-SNAPSHOT'
+    implementation 'net.lapismc:LapisCore:1.12.19'
+    compileOnly 'org.spigotmc:spigot-api:1.21.4-R0.1-SNAPSHOT'
 }
 
 shadowJar {
